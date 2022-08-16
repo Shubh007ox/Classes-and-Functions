@@ -33,3 +33,25 @@ student1.eligible(35);
 student2.eligible(34);
 student3.eligible(50);
 student5.getcount();
+---------------------------
+    class Student{
+    constructor(Name,age,Marks){
+        this.Name = Name
+        this.age = age
+        this.Marks = Marks5
+    }
+    setMinAge(minnimunPlacementage){
+        return (MinMarks) => {
+            if (this.Marks > MinMarks && this.age > minnimunPlacementage) {
+                console.log(this.Name + ' is eligible for company Plaements')
+            }else{
+                console.log(this.Name + ' is not eligible for company Plaements')
+            }
+        }
+    }
+}
+const student1 = new Student('shubham',23,95);
+const student2 = new Student('gaurav',17,90);
+student1.setMinAge(18)(35);
+student2.setMinAge(18)(35);
+
